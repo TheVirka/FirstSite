@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        var map;
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [51.270109, 30.219713],
+                zoom: 15
+            });
+            DG.marker([51.270109, 30.219713]).addTo(map).bindPopup('База 1000-7 Dead Inside');;
+        });
+    </script>
+</head>
+<body>
+  <header>
+    <img src="img/default.jpg" alt="logo" width="200"
+    draggable="false">
+    <nav id="menu1">
+      <ul>
+        <li><a href="main.html">Главная</a></li>
+        <li><a href="index.html">Посты</a>
+        <ul>
+          <li><a href="post.html">Самара</a></li>
+          <li><a href="post_2.html">Сочи</a></li>
+          <li><a href="post_3.html">Токио</a></li>
+          <li><a href="404.html">Новосибирск</a></li>
+        </ul>
+      </li>
+        <li><a href="map.html">Контакты</a></li>
+        <li><a href="about.html">О компании</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div id="map" style="width:2000px; height:800px"></div>
+
+    <footer>
+      <div>
+        <div>
+          <div>
+            <img src="img/default.jpg" alt="logo" width="250">
+          </div>
+          <div class="footer-columns">
+              <div class="footer-column">
+                  <h3>About</h3>
+                  <p> Просто сайт
+                  </p>
+              </div>
+              <div class="footer-column">
+                  <h3>Contact me</h3>
+                  <p>Если вы заинтересованы в сотрудничестве
+                    со мной или просто хотите поздороваться,
+                    то напишите на мой емейл.
+                    <br>
+                    <strong>
+                      Email:
+                      <a href="#">почта@mail.com</a>
+                    </strong>
+                  </p>
+              </div>
+          </div>
+        </div>
+        <center>
+          <small>Copyright &copy; TheVirka</small>
+        </center>
+      </div>
+    </footer>
+</body>
+</html>
